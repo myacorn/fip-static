@@ -16,16 +16,16 @@
 	--link-hover-color: #13547a;
 	--body-font-family: 'Open Sans', sans-serif;
 	--title-font-family: 'Onest', sans-serif;
-	--h1-font-size: 36px;
-	--h2-font-size: 32px;
-	--h3-font-size: 38px;
-	--h4-font-size: 24px;
-	--h5-font-size: 22px;
-	--h6-font-size: 20px;
-	--p-font-size: 15px;
-	--menu-font-size: 14px;
-	--btn-font-size: 18px;
-	--copyright-font-size: 15px;
+	--h1-font-size: 2.25rem;
+	--h2-font-size: 2.05rem;
+	--h3-font-size: 1.85rem;
+	--h4-font-size: 1.65rem;
+	--h5-font-size: 1.45rem;
+	--h6-font-size: 1.25rem;
+	--p-font-size: 1.05rem;
+	--menu-font-size: .85rem;
+	--btn-font-size: 1.05rem;
+	--copyright-font-size: .95rem;
 	--border-radius-large: 100px;
 	--border-radius-medium: 20px;
 	--border-radius-small: 10px;
@@ -591,6 +591,9 @@ b,strong {
 		max-width: 155px;
 		margin-top: 10px;
 		margin-bottom: 15px;
+	}
+	.hero-section {
+		background-position: center;
 	}
 	.navbar-expand-lg .navbar-nav {
 		padding-bottom: 20px;
