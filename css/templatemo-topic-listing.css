@@ -23,7 +23,7 @@
 	--h5-font-size: 1.45rem;
 	--h6-font-size: 1.25rem;
 	--p-font-size: 1.05rem;
-	--menu-font-size: .85rem;
+	--menu-font-size: 1.05rem;
 	--btn-font-size: 1.05rem;
 	--copyright-font-size: .95rem;
 	--border-radius-large: 100px;
@@ -197,6 +197,7 @@ b,strong {
 	color: var(--fip-lt-blue);
 	font-family: var(--title-font-family);
 	font-size: var(--menu-font-size);
+	cursor: pointer;
 	font-weight: var(--font-weight-bold);
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -266,6 +267,9 @@ b,strong {
 		opacity: 1;
 		margin-top: 0;
 		pointer-events: auto;
+	}
+	.container, .container-md, .container-sm {
+		max-width: 900px;
 	}
 }
 .navbar-icon {
@@ -395,6 +399,17 @@ b,strong {
 	color: var(--fip-neon-blue);
 	font-weight: var(--font-weight-bold);
 }
+.custom-block-video {
+	background-image: url('../images/fish.jpg');
+	background-size: cover;
+}
+.custom-block-video .bi-collection-play {
+	display: block;
+    text-align: center;
+    font-size: 50px;
+	cursor: pointer;
+    padding: 25% 0 0;
+}
 .custom-block-video > a {
 	position: absolute;
 	width: 100%;
@@ -505,6 +520,7 @@ b,strong {
 }
 /*---------------------------------------SITE FOOTER-----------------------------------------*/
 .site-footer {
+	padding: 40px 0;
 	position: relative;
 }
 .site-footer-title {
