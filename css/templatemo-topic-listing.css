@@ -268,7 +268,7 @@ b,strong {
 		margin-top: 0;
 		pointer-events: auto;
 	}
-	.home .container, .home .container-md, .home .container-sm {
+	.container, .container-md, .container-sm {
 		max-width: 900px;
 	}
 }
@@ -677,12 +677,13 @@ b,strong {
 	padding: 8px 0;
 	border-bottom: 1px solid var(--noaa-dk-blue);
   }
-  .accordion div, .accordion p, .accordion hr {
+  .accordion div, .accordion p, .accordion hr, .accordion img {
 	display: none;
   }
   .accordion p {
 	color: var(--noaa-dk-blue);
 	padding-left: 10px;
+	float: left;
 	padding-right: 10px;
   }
   .accordion .section-header {
@@ -696,4 +697,18 @@ b,strong {
   }
   .accordion .opened-for-codepen {
 	display: block;
+  }
+
+  .accordion .icon {
+	display: inline-block;
+    max-width: 25px;
+    margin: 0px 10px 2px 0;
+  }
+  .accordion .section-img {
+	display: block;
+	max-width: 100%;
+	float: right;
+    max-width: 375px;
+    padding: 0 0 0 10px;
+    max-height: 325px;
   }
