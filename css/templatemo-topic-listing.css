@@ -268,7 +268,7 @@ b,strong {
 		margin-top: 0;
 		pointer-events: auto;
 	}
-	.container, .container-md, .container-sm {
+	.home .container, .home .container-md, .home .container-sm {
 		max-width: 900px;
 	}
 }
@@ -641,3 +641,59 @@ b,strong {
 		padding-bottom: 0;
 	}
 }
+
+/* About Tutorial */
+
+.tutorial-footer-hero-section {
+ padding-top: 160px;
+}
+
+.about-tutorial {
+	padding: 60px 0;
+	background-color: var(--noaa-dk-blue);
+	color: var(--white-color);
+}
+
+.about-tutorial h6 {
+	text-transform: uppercase;
+	color: var(--white-color);
+}
+
+.about-tutorial p{
+	color: var(--white-color);
+}
+
+/* Accordion */
+
+.accordion-section {
+	background-color: var(--fip-lt-blue);
+	padding: 40px 0;
+}
+
+  .accordion h6 {
+	cursor: pointer;
+	text-transform: uppercase;
+	color: var(--noaa-dk-blue);
+	padding: 8px 0;
+	border-bottom: 1px solid var(--noaa-dk-blue);
+  }
+  .accordion div, .accordion p, .accordion hr {
+	display: none;
+  }
+  .accordion p {
+	color: var(--noaa-dk-blue);
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+  .accordion .section-header {
+	font-weight: var(--font-weight-bold);
+	text-transform: uppercase;
+  }
+  .accordion hr {
+	border-top: 3px solid var(--white-color);
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+  .accordion .opened-for-codepen {
+	display: block;
+  }
