@@ -597,8 +597,95 @@ b,strong {
 	background: var(--noaa-dk-blue);
 	color: var(--white-color);
 }
+
+/* About Tutorial */
+
+.tutorial-footer-hero-section {
+	padding-top: 160px;
+   }
+   
+   .about-tutorial {
+	   padding: 60px 0;
+	   background-color: var(--noaa-dk-blue);
+	   color: var(--white-color);
+   }
+   
+   .about-tutorial h6 {
+	   text-transform: uppercase;
+	   color: var(--white-color);
+   }
+   
+   .about-tutorial p{
+	   color: var(--white-color);
+   }
+   
+   /* Accordion */
+   
+   .accordion-section {
+	   background-color: var(--fip-lt-blue);
+	   padding: 40px 0;
+   }
+   
+	 .accordion a {
+	   cursor: pointer;
+	   text-transform: uppercase;
+	   color: var(--noaa-dk-blue);
+	   padding: 8px 0;
+	   border-bottom: 1px solid var(--noaa-dk-blue);
+	   position: relative;
+	   z-index: 1;
+	   display: block;
+	   scroll-margin-top: 150px;
+	 }
+	 .accordion div, .accordion p, .accordion hr, .accordion img {
+	   display: none;
+	 }
+	 .accordion p {
+	   color: var(--noaa-dk-blue);
+	   padding-left: 10px;
+	   float: left;
+	   padding-right: 10px;
+	 }
+	 .accordion .section-header {
+	   font-weight: var(--font-weight-bold);
+	   text-transform: uppercase;
+	 }
+	 .accordion hr {
+	   border-top: 3px solid var(--white-color);
+	   padding-left: 10px;
+	   padding-right: 10px;
+	 }
+	 .accordion .opened-for-codepen {
+	   display: block;
+	 }
+   
+	 .accordion .icon {
+	   display: inline-block;
+	   max-width: 25px;
+	   margin: 0px 10px 2px 0;
+	   position: relative;
+	   z-index: -4;
+	 }
+	 .accordion .section-img {
+	   display: block;
+	   max-width: 100%;
+	   float: right;
+	   max-width: 375px;
+	   padding: 0 0 0 10px;
+	   max-height: 325px;
+	 }
+	 .section-img.first-image {
+		float: none;
+		max-width: 100%;
+		padding: 10px 0;
+		margin: 0 auto;
+		max-height: 500px;
+	 }
 /*---------------------------------------RESPONSIVE STYLES-----------------------------------------*/
 @media screen and (max-width: 991px) {
+	.accordion a {
+		scroll-margin-top: 150px;
+	  }
 	.navbar-nav .dropdown-menu {
 		position: relative;
 		left: 10px;
@@ -642,73 +729,12 @@ b,strong {
 	}
 }
 
-/* About Tutorial */
-
-.tutorial-footer-hero-section {
- padding-top: 160px;
+@media (max-width: 768px) {
+	.accordion .section-img {
+		display: block;
+		max-width: 100%;
+		float: none;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
 }
-
-.about-tutorial {
-	padding: 60px 0;
-	background-color: var(--noaa-dk-blue);
-	color: var(--white-color);
-}
-
-.about-tutorial h6 {
-	text-transform: uppercase;
-	color: var(--white-color);
-}
-
-.about-tutorial p{
-	color: var(--white-color);
-}
-
-/* Accordion */
-
-.accordion-section {
-	background-color: var(--fip-lt-blue);
-	padding: 40px 0;
-}
-
-  .accordion h6 {
-	cursor: pointer;
-	text-transform: uppercase;
-	color: var(--noaa-dk-blue);
-	padding: 8px 0;
-	border-bottom: 1px solid var(--noaa-dk-blue);
-  }
-  .accordion div, .accordion p, .accordion hr, .accordion img {
-	display: none;
-  }
-  .accordion p {
-	color: var(--noaa-dk-blue);
-	padding-left: 10px;
-	float: left;
-	padding-right: 10px;
-  }
-  .accordion .section-header {
-	font-weight: var(--font-weight-bold);
-	text-transform: uppercase;
-  }
-  .accordion hr {
-	border-top: 3px solid var(--white-color);
-	padding-left: 10px;
-	padding-right: 10px;
-  }
-  .accordion .opened-for-codepen {
-	display: block;
-  }
-
-  .accordion .icon {
-	display: inline-block;
-    max-width: 25px;
-    margin: 0px 10px 2px 0;
-  }
-  .accordion .section-img {
-	display: block;
-	max-width: 100%;
-	float: right;
-    max-width: 375px;
-    padding: 0 0 0 10px;
-    max-height: 325px;
-  }
