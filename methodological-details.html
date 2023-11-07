@@ -56,7 +56,7 @@ https://templatemo.com/tm-590-topic-listing
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll">Tutorial</a>
+                            <a href="/tutorial.html"class="nav-link">Tutorial</a>
                         </li>
 
                         <li class="nav-item">
@@ -536,21 +536,34 @@ https://templatemo.com/tm-590-topic-listing
 
             if ($.inArray(name, headers) > -1) {
                 var subItem = $(target).next().children();
-
-                var depth = $(subItem).length;
-                var allAtDepth = $(".accordion p, .accordion div, .accordion hr, .accordion small, .accordion table").filter(function () {
-                });
                 var currentSrc = $(target).children().attr("src");
+                var depth = $(subItem).length;
+                subItem.addClass('open');
+                var allAtDepth = $(".accordion p, .accordion div, .accordion hr, .accordion small, .accordion table").filter(function () {
+                    if (subItem.hasClass("open")) {
+                        return true;
+                    }
+                });
+
+                $("h6:has([src])").each(function () {
+                var h6Element = $(this);
+                var srcAttribute = h6Element.find("[src]").attr("src");
+
+                if (srcAttribute && !srcAttribute.includes("_off")) {
+                    h6Element.children().attr("src", srcAttribute.replace(".png", "_off.png"));
+                }
+
                 if (currentSrc.includes("_off")) {
                     $(target).children().attr("src", currentSrc.replace("_off", ""));
                 }
+            });
+
                 $(allAtDepth).slideUp("slow");
 
                 //slideToggle target content and adjust bottom border if necessary
                 subItem.slideToggle("slow", function () {
                     $(".accordion :visible:last").css("border-radius", "0 0 10px 10px");
                 });
-                // }
                 setTimeout(function () {
                     // Scroll to the clicked element
                     $('html, body').animate({
