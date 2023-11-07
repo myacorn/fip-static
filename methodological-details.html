@@ -99,306 +99,355 @@ https://templatemo.com/tm-590-topic-listing
             <div class="container">
                 <div class="row">
                     <aside class="accordion">
-                        <a open="opened" href="#one" id="one"><img src="images/datasets.png" class="icon" />Shrimp fisheries</a>
-                        <p class="opened-for-codepen">Shrimp fisheries data were derived from electronic logbooks and
-                            dealer records for the period 2014-2021. Landings and revenues are reported per trip and
-                            were matched to multiple VMS fishing pings. Fishing pings were identified using speed
-                            filters and logic rules. Dealer records provide trip-level landings. Landings and revenues
-                            for each electronic logbook ping were calculated by distributing trip-level values uniformly
-                            to each fishing ping, the most common method used in marine spatial planning (Chollett et
-                            al. 2022). Unmatched revenues and landings (corresponding to fishing activity carried out
-                            by vessels without transponders, or when transponders were off) were distributed evenly
-                            among fishing pings for that year. All revenue data were reported in 2021 dollars using the
-                            implicit price deflator by the U.S. Bureau of Economic Analysis. Full information for this
-                            dataset can be found in Chollett &amp; O’Farrell (2022). Shrimp fisheries data were mapped
-                            over a 10x10 km grid and over Coastal Fisheries statistical areas (Atkinson et al. 2021).
-                        </p>
+                        <h6><img src="images/datasets.png" class="icon" />Shrimp fisheries</h6>
+                        <figure>
+                            <p class="opened-for-codepen">Shrimp fisheries data were derived from electronic logbooks
+                                and
+                                dealer records for the period 2014-2021. Landings and revenues are reported per trip and
+                                were matched to multiple VMS fishing pings. Fishing pings were identified using speed
+                                filters and logic rules. Dealer records provide trip-level landings. Landings and
+                                revenues
+                                for each electronic logbook ping were calculated by distributing trip-level values
+                                uniformly
+                                to each fishing ping, the most common method used in marine spatial planning (Chollett
+                                et
+                                al. 2022). Unmatched revenues and landings (corresponding to fishing activity carried
+                                out
+                                by vessels without transponders, or when transponders were off) were distributed evenly
+                                among fishing pings for that year. All revenue data were reported in 2021 dollars using
+                                the
+                                implicit price deflator by the U.S. Bureau of Economic Analysis. Full information for
+                                this
+                                dataset can be found in Chollett &amp; O’Farrell (2022). Shrimp fisheries data were
+                                mapped
+                                over a 10x10 km grid and over Coastal Fisheries statistical areas (Atkinson et al.
+                                2021).
+                            </p>
+                        </figure>
+                        <h6><img src="images/section1_off.png" class="icon" />Reef fish
+                            fisheries</h6>
+                        <figure>
+                            <p>Reef fish fisheries data are available from 2007 to 2021. In the GoM
+                                reef fish are fished using multiple gears: bottom longline, handlines and bandit reels,
+                                diving, buoys, gillnets, trolling, cast nets and traps. Only bottom longline, handlines
+                                and
+                                bandit reels have been mapped at high spatial resolution using Vessel Monitoring System
+                                (VMS) data that have been linked to logbooks. Spatial information for the other
+                                fisheries is
+                                only available at the spatial scale of Coastal Fisheries statistical areas (Atkinson et
+                                al.
+                                2021), through self-reported fishing locations in logbooks.</p>
+                            <p>Data for reef fish fisheries using bottom longlines, handlines and bandit reels were
+                                mapped in the FIP using VMS positions that have been linked to logbook data to extract
+                                landings and revenues. Fishing pings were identified using a supervised classification
+                                method implemented in Random Forests (Breiman 2001). Landings and revenues are
+                                reported per trip and were matched to multiple VMS fishing pings. Landings and revenues
+                                for each VMS ping were calculated by distributing trip-level values uniformly to each
+                                fishing ping. Unmatched revenues and landings were distributed evenly among fishing
+                                pings for that year. All revenue data were reported in 2021 dollars using the implicit
+                                price
+                                deflator by the U.S. Bureau of Economic Analysis. This dataset was first described by
+                                O’Farrell et al. (2017) and is fully described in O’Farrell et al. (in press). Bottom
+                                longline,
+                                handline and bandit reel reef fish fisheries data were mapped over a 10 x10 km grid and
+                                over Coastal Fisheries statistical areas (Atkinson et al. 2021).</p>
+                            <p>Data for reef fish fisheries without linked positional data (caught using diving, buoys,
+                                gillnets and trolling) were mapped in the FIP using the self-reported Coastal Fisheries
+                                statistical areas available in the logbooks (Atkinson et al. 2021). Revenues have been
+                                adjusted to 2021 dollars using the implicit price deflator by the U.S. Bureau of
+                                Economic
+                                Analysis. Coastal Cast nets and Traps are small fisheries with little fishing effort,
+                                have
+                                no
+                                non-confidential data at the statistical fishing area level if we apply the rule of
+                                three
+                                and
+                                were not mapped.</p>
+                        </figure>
+                        <h6><img src="images/section2_off.png" class="icon" />Highly migratory
+                            species fisheries</h6>
+                        <figure>
+                            <p>Highly migratory species (HMS) are fished using
+                                multiple gears: pelagic longline, bandit, bottom longline, buoys, gillnet, green stick
+                                tuna,
+                                handlines, ottertrawl, pairtrawl, and rod and reel, but pelagic longline is by far the
+                                largest
+                                fishery in the GoM, accumulating almost 90% of logbook records from 2013 to 2021.</p>
+                            <p>HMS fisheries data caught using pelagic longlines are available in the FIP from 2015 to
+                                2021, when revenues data are available. Total revenue estimates were calculated by
+                                George Silva (NOAA’s NMFS), and are not available for specific species or species
+                                groups. For this dataset, landings and revenues are reported per set and coincide with a
+                                self-reported coordinate. We summarized total landings and revenues data into Coastal
+                                Fisheries statistical areas (Atkinson et al. 2021). Revenues have been adjusted to 2021
+                                dollars using the implicit price deflator by the U.S. Bureau of Economic Analysis.
+                                Although
+                                this fishery has been recently mapped using high-spatial resolution VMS data, the data
+                                for
+                                the fishery in the GoM is too sparse and 10 x10 km grids would involve loosing about
+                                half
+                                of the data and were not considered here.</p>
+                        </figure>
+                        <h6><img src="images/section3_off.png" class="icon" />Headboat
+                            fisheries</h6>
+                        <figure>
+                            <p>In the Gulf, information for headboats targeting reef fish is available
+                                from 2015 to 2021. In headboats recreational fishers carry more than six passengers for
+                                half or full day trips and fishers pay by the “head” (Fitzpatrick et al. 2017). Data
+                                have
+                                been
+                                collected in the Gulf by the Beaufort Laboratory of the National Marine Fisheries
+                                Service,
+                                Southeast Fisheries Science Center (SFSC) since 1986, with an electronic logbook
+                                system since 2013 and economic data added in 2014 (Carter and Liese 2017, Fitzpatrick
+                                et al. 2017). For each trip, logbooks collect information on date and duration of the
+                                trip,
+                                geographic location of fishing activity, number of individuals of each caught species
+                                that
+                                were kept, the number of crew, number of non-fishing passengers, gallons of fuel used
+                                and price paid per gallon of fuel, among others (Fitzpatrick et al. 2017). For this
+                                fishery,
+                                only data on location, date and net revenue pr trip were provided, and therefore there
+                                are
+                                no associated landings, species or port information.</p>
+                            <p>Revenue was estimated by NOAA’s SFSC (Social Science Research Group, Recreational
+                                Fisheries) as the price per angler hour multiplied by the number of anglers and trip
+                                hours.
+                                Net revenue was estimated as the revenue obtained minus fuel and crew costs, with fuel
+                                costs equalling gallons used multiplied by the price per gallon, and crew costs
+                                calculated
+                                as trip duration multiplied by wage per hour and number of crew. All information was
+                                extracted from logbooks except the price per angler hour and wage which were estimated
+                                from additional documentation<sup>1</sup></p>
+                            <p>In the FIP all revenue data were reported in 2021 dollars using the implicit price
+                                deflator
+                                by
+                                the U.S. Bureau of Economic Analysis. Headboat fisheries data were mapped over a 10
+                                x10 km grid and over Coastal Fisheries statistical areas (Atkinson et al. 2021).</p>
+                            <small><sup>1</sup> https://repository.library.noaa.gov/view/noaa/12007</small>
+                        </figure>
+                        <h6><img src="images/section4_off.png" class="icon" />Confidentiality
+                            issues</h6>
+                        <figure>
+                            <p>US fisheries data are subject to strict confidentiality. To protect the identity of any
+                                single
+                                fisher, data presented to the public should conform a criteria called “rule of three”,
+                                where
+                                locations with less than three different vessels fishing are excluded (filtered) from
+                                the
+                                final
+                                dataset. In all products in the FIP, records that did not meet the rule of three (&lt;=
+                                three
+                                unique vessels targeting a grid cell) were removed, therefore all the layers include
+                                only
+                                non-confidential data.</p>
+                            <p>Applying the rule of three implies loosing some information (Figure 1). The consequences
+                                are likely to depend on the specific fishery or data subset. In general, the higher the
+                                density of the data the less data loss. We quantified the percentage of data removed due
+                                to applying the rule of three in each layer included in the FIP. All values can be found
+                                in
+                                the
+                                tables at the end of this document.</p>
+                            <p>Figure 1. In the figure, a grid overlays hypothetical fishing pings. Fishing pings have
+                                different colors to represent different vessels. The same set of pings is shown in each
+                                panel. When producing a grid and applying the rule of three, some cells and fishing
+                                pings
+                                are lost (right). For this hypothetical dataset, 11% of the pings are lost due to the
+                                rule
+                                of
+                                three.</p>
+                        </figure>
+                        <h6><img src="images/section6_off.png" class="icon" />Confidentiality
+                            tables</h6>
+                        <figure>
+                            <p>Table 1. Percentage of data loss (percentage of fishing pings lost) after applying the
+                                rule
+                                of
+                                three to shrimp fisheries.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Layer</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">10 km
+                                            % data
+                                            lost</th>
+                                        <th scope="col">Statistical
+                                            areas
+                                            % data lost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><strong>Overall</strong><br><br>Overall Landings</th>
+                                        <td><br><br>Total landings (pounds) for the entire time
 
-                        <a href="#two" id="two"><img src="images/section1_off.png" class="icon" />Reef fish
-                            fisheries</a>
-                        <p>Reef fish fisheries data are available from 2007 to 2021. In the GoM
-                            reef fish are fished using multiple gears: bottom longline, handlines and bandit reels,
-                            diving, buoys, gillnets, trolling, cast nets and traps. Only bottom longline, handlines and
-                            bandit reels have been mapped at high spatial resolution using Vessel Monitoring System
-                            (VMS) data that have been linked to logbooks. Spatial information for the other fisheries is
-                            only available at the spatial scale of Coastal Fisheries statistical areas (Atkinson et al.
-                            2021), through self-reported fishing locations in logbooks.</p>
-                        <p>Data for reef fish fisheries using bottom longlines, handlines and bandit reels were
-                            mapped in the FIP using VMS positions that have been linked to logbook data to extract
-                            landings and revenues. Fishing pings were identified using a supervised classification
-                            method implemented in Random Forests (Breiman 2001). Landings and revenues are
-                            reported per trip and were matched to multiple VMS fishing pings. Landings and revenues
-                            for each VMS ping were calculated by distributing trip-level values uniformly to each
-                            fishing ping. Unmatched revenues and landings were distributed evenly among fishing
-                            pings for that year. All revenue data were reported in 2021 dollars using the implicit price
-                            deflator by the U.S. Bureau of Economic Analysis. This dataset was first described by
-                            O’Farrell et al. (2017) and is fully described in O’Farrell et al. (in press). Bottom
-                            longline,
-                            handline and bandit reel reef fish fisheries data were mapped over a 10 x10 km grid and
-                            over Coastal Fisheries statistical areas (Atkinson et al. 2021).</p>
-                        <p>Data for reef fish fisheries without linked positional data (caught using diving, buoys,
-                            gillnets and trolling) were mapped in the FIP using the self-reported Coastal Fisheries
-                            statistical areas available in the logbooks (Atkinson et al. 2021). Revenues have been
-                            adjusted to 2021 dollars using the implicit price deflator by the U.S. Bureau of Economic
-                            Analysis. Coastal Cast nets and Traps are small fisheries with little fishing effort, have
-                            no
-                            non-confidential data at the statistical fishing area level if we apply the rule of three
-                            and
-                            were not mapped.</p>
-
-                        <a href="#three" id="three"><img src="images/section2_off.png" class="icon" />Highly migratory
-                            species fisheries</a>
-                        <p>Highly migratory species (HMS) are fished using
-                            multiple gears: pelagic longline, bandit, bottom longline, buoys, gillnet, green stick tuna,
-                            handlines, ottertrawl, pairtrawl, and rod and reel, but pelagic longline is by far the
-                            largest
-                            fishery in the GoM, accumulating almost 90% of logbook records from 2013 to 2021.</p>
-                        <p>HMS fisheries data caught using pelagic longlines are available in the FIP from 2015 to
-                            2021, when revenues data are available. Total revenue estimates were calculated by
-                            George Silva (NOAA’s NMFS), and are not available for specific species or species
-                            groups. For this dataset, landings and revenues are reported per set and coincide with a
-                            self-reported coordinate. We summarized total landings and revenues data into Coastal
-                            Fisheries statistical areas (Atkinson et al. 2021). Revenues have been adjusted to 2021
-                            dollars using the implicit price deflator by the U.S. Bureau of Economic Analysis. Although
-                            this fishery has been recently mapped using high-spatial resolution VMS data, the data for
-                            the fishery in the GoM is too sparse and 10 x10 km grids would involve loosing about half
-                            of the data and were not considered here.</p>
-
-                        <a href="#four" id="four"><img src="images/section3_off.png" class="icon" />Headboat
-                            fisheries</a>
-                        <p>In the Gulf, information for headboats targeting reef fish is available
-                            from 2015 to 2021. In headboats recreational fishers carry more than six passengers for
-                            half or full day trips and fishers pay by the “head” (Fitzpatrick et al. 2017). Data have
-                            been
-                            collected in the Gulf by the Beaufort Laboratory of the National Marine Fisheries Service,
-                            Southeast Fisheries Science Center (SFSC) since 1986, with an electronic logbook
-                            system since 2013 and economic data added in 2014 (Carter and Liese 2017, Fitzpatrick
-                            et al. 2017). For each trip, logbooks collect information on date and duration of the trip,
-                            geographic location of fishing activity, number of individuals of each caught species that
-                            were kept, the number of crew, number of non-fishing passengers, gallons of fuel used
-                            and price paid per gallon of fuel, among others (Fitzpatrick et al. 2017). For this fishery,
-                            only data on location, date and net revenue pr trip were provided, and therefore there are
-                            no associated landings, species or port information.</p>
-                        <p>Revenue was estimated by NOAA’s SFSC (Social Science Research Group, Recreational
-                            Fisheries) as the price per angler hour multiplied by the number of anglers and trip hours.
-                            Net revenue was estimated as the revenue obtained minus fuel and crew costs, with fuel
-                            costs equalling gallons used multiplied by the price per gallon, and crew costs calculated
-                            as trip duration multiplied by wage per hour and number of crew. All information was
-                            extracted from logbooks except the price per angler hour and wage which were estimated
-                            from additional documentation<sup>1</sup></p>
-                        <p>In the FIP all revenue data were reported in 2021 dollars using the implicit price deflator
-                            by
-                            the U.S. Bureau of Economic Analysis. Headboat fisheries data were mapped over a 10
-                            x10 km grid and over Coastal Fisheries statistical areas (Atkinson et al. 2021).</p>
-                        <small><sup>1</sup> https://repository.library.noaa.gov/view/noaa/12007</small>
-
-                        <a href="#five" id="five"><img src="images/section4_off.png" class="icon" />Confidentiality
-                            issues</a>
-                        <p>US fisheries data are subject to strict confidentiality. To protect the identity of any
-                            single
-                            fisher, data presented to the public should conform a criteria called “rule of three”, where
-                            locations with less than three different vessels fishing are excluded (filtered) from the
-                            final
-                            dataset. In all products in the FIP, records that did not meet the rule of three (&lt;=
-                            three
-                            unique vessels targeting a grid cell) were removed, therefore all the layers include only
-                            non-confidential data.</p>
-                        <p>Applying the rule of three implies loosing some information (Figure 1). The consequences
-                            are likely to depend on the specific fishery or data subset. In general, the higher the
-                            density of the data the less data loss. We quantified the percentage of data removed due
-                            to applying the rule of three in each layer included in the FIP. All values can be found in
-                            the
-                            tables at the end of this document.</p>
-                        <p>Figure 1. In the figure, a grid overlays hypothetical fishing pings. Fishing pings have
-                            different colors to represent different vessels. The same set of pings is shown in each
-                            panel. When producing a grid and applying the rule of three, some cells and fishing pings
-                            are lost (right). For this hypothetical dataset, 11% of the pings are lost due to the rule
-                            of
-                            three.</p>
-
-                        <a href="#six" id="six"><img src="images/section6_off.png" class="icon" />Confidentiality
-                            tables</a>
-                        <p>Table 1. Percentage of data loss (percentage of fishing pings lost) after applying the rule
-                            of
-                            three to shrimp fisheries.</p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Layer</th>
-                                    <th scope="col">Description</th>
-                                    <th scope="col">10 km
-                                        % data
-                                        lost</th>
-                                    <th scope="col">Statistical
-                                        areas
-                                        % data lost</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row"><strong>Overall</strong><br><br>Overall Landings</th>
-                                    <td><br><br>Total landings (pounds) for the entire time
-
-                                        series (2007-2021)</td>
-                                    <td><br><br>0.1789</td>
-                                    <td><br><br>0.0054</td>
-                                </tr>
-                                <tr class="add-hr">
-                                    <th scope="row">Overall Revenues</th>
-                                    <td>Total revenues (USD) for the entire timeseries (2007-2021)</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><strong>Species</strong><br><br>Landings Brown shrimp</th>
-                                    <td><br><br>Total landings (pounds) for brown shrimp</td>
-                                    <td><br><br>0.1789</td>
-                                    <td><br><br>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues Brown shrimp</th>
-                                    <td>Total revenues (USD) for brown shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Landings White shrimp</th>
-                                    <td>Total landings (pounds) for white shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues White shrimp</th>
-                                    <td>Total revenues (USD) for white shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Landings Seabobs</th>
-                                    <td>Total landings (pounds) for seabobs</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues Seabobs</th>
-                                    <td>Total revenues (USD) for seabobs</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Landings Rock shrimp</th>
-                                    <td>Total landings (pounds) for rock shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues Rock shrimp</th>
-                                    <td>Total revenues (USD) for rock shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Landings Trachypenaeus</th>
-                                    <td>Total landings (pounds) for trachypenaeus</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues
-                                        Trachypenaeus</th>
-                                    <td>Total revenues (USD) for trachypenaeus</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Landings Pink shrimp</th>
-                                    <td>Total landings (pounds) for pink shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues Pink shrimp</th>
-                                    <td>Total revenues (USD) for pink shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Landings Royal red
-                                        shrimp</th>
-                                    <td>Total landings (pounds) for royal red shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <tr class="add-hr">
-                                    <th scope="row">Revenues Royal red
-                                        shrimp</th>
-                                    <td>Total revenues (USD) for royal red shrimp</td>
-                                    <td>0.1789</td>
-                                    <td>0.0054</td>
-                                </tr>
-                                <!-- <tr>
+                                            series (2007-2021)</td>
+                                        <td><br><br>0.1789</td>
+                                        <td><br><br>0.0054</td>
+                                    </tr>
+                                    <tr class="add-hr">
+                                        <th scope="row">Overall Revenues</th>
+                                        <td>Total revenues (USD) for the entire timeseries (2007-2021)</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><strong>Species</strong><br><br>Landings Brown shrimp</th>
+                                        <td><br><br>Total landings (pounds) for brown shrimp</td>
+                                        <td><br><br>0.1789</td>
+                                        <td><br><br>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues Brown shrimp</th>
+                                        <td>Total revenues (USD) for brown shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Landings White shrimp</th>
+                                        <td>Total landings (pounds) for white shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues White shrimp</th>
+                                        <td>Total revenues (USD) for white shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Landings Seabobs</th>
+                                        <td>Total landings (pounds) for seabobs</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues Seabobs</th>
+                                        <td>Total revenues (USD) for seabobs</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Landings Rock shrimp</th>
+                                        <td>Total landings (pounds) for rock shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues Rock shrimp</th>
+                                        <td>Total revenues (USD) for rock shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Landings Trachypenaeus</th>
+                                        <td>Total landings (pounds) for trachypenaeus</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues
+                                            Trachypenaeus</th>
+                                        <td>Total revenues (USD) for trachypenaeus</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Landings Pink shrimp</th>
+                                        <td>Total landings (pounds) for pink shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues Pink shrimp</th>
+                                        <td>Total revenues (USD) for pink shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Landings Royal red
+                                            shrimp</th>
+                                        <td>Total landings (pounds) for royal red shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <tr class="add-hr">
+                                        <th scope="row">Revenues Royal red
+                                            shrimp</th>
+                                        <td>Total revenues (USD) for royal red shrimp</td>
+                                        <td>0.1789</td>
+                                        <td>0.0054</td>
+                                    </tr>
+                                    <!-- <tr>
                                     <th scope="row"></th>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                 </tr> -->
-                                <tr>
-                                    <th scope="row"><strong>Time Period</strong><br><br>Landings 2007-2014</th>
-                                    <td><br><br>Total landings (pounds) for the period 2007
+                                    <tr>
+                                        <th scope="row"><strong>Time Period</strong><br><br>Landings 2007-2014</th>
+                                        <td><br><br>Total landings (pounds) for the period 2007
 
-                                        to 2014</td>
-                                    <td><br><br>0.5557</td>
-                                    <td><br><br>0.0974</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues 2007-2014</th>
-                                    <td>Total revenues (USD) for the period 2007 to
+                                            to 2014</td>
+                                        <td><br><br>0.5557</td>
+                                        <td><br><br>0.0974</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues 2007-2014</th>
+                                        <td>Total revenues (USD) for the period 2007 to
 
-                                        2014</td>
-                                    <td>0.5557</td>
-                                    <td>0.0974</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Landings 2015-2021</th>
-                                    <td>Total landings (pounds) for the period 2015
+                                            2014</td>
+                                        <td>0.5557</td>
+                                        <td>0.0974</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Landings 2015-2021</th>
+                                        <td>Total landings (pounds) for the period 2015
 
-                                        to 2021</td>
-                                    <td>0.3207</td>
-                                    <td>0.0062</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Revenues 2015-2021</th>
-                                    <td>Total revenues (USD) for the period 2015 to
+                                            to 2021</td>
+                                        <td>0.3207</td>
+                                        <td>0.0062</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Revenues 2015-2021</th>
+                                        <td>Total revenues (USD) for the period 2015 to
 
-                                        2021</td>
-                                    <td>0.3207</td>
-                                    <td>0.0062</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a href="#seven" id="seven"><img src="images/section7_off.png" class="icon" />References</a>
-                        <p>Atkinson S, Judge M, Orhun R. 2021. Coastal Fisheries Logbook Program Metadata.
-                            SEDAR74-DW-3. SEDAR. North Charleston, SC. 17 pp. Available at:
-                            https://sedarweb.org/documents/sedar-74-dw-03-coastal-fisheries-logbook-program-
-                            metadata/</p>
-                        <p>Breiman L. 2001. Random forests. Machine Learning. 45: 5-32.</p>
-                        <p>Carter DW, Liese C. 2017. Summary of economic data collected by the Gulf of Mexico and
-                            South Atlantic Headboat Logbooks: 2015. NOAA Technical Memorandum NMFS-SEFSC-
-                            703. Miami, Florida. 34 pp.</p>
-                        <p>Chollett I, O’Farrell S. 2022. Gulf of Mexico shrimp fishery: linking ELB and dealer data to
-                            map landings and revenues. Report presented to NOAA SFSC. West of Ireland. 13 pp.</p>
-                        <p>Chollett I, Perruso L, O’Farrell S. 2022. Toward a better use of fisheries data in spatial
-                            planning. Fish and Fisheries. 23: 1136-1149.</p>
-                        <p>Fitzpatrick EE, Williams EH, Shertzer KW, Siegfried KI, Craig JK, Cheshire RT, Kellison
-                            GT, Fitzpatrick KE, Brennan K. 2017. The NMFS Southeast Region Headboat Survey:
-                            History, methodology, and data integrity. Marine Fisheries Review. 79(1):1-27.</p>
-                        <p>O’Farrell S, Sanchirico JN, Chollett I, Cockrell M, Murawski SA, Watson JT, Haynie A,
-                            Strelcheck A, Perruso L. 2017. Improving detection of short-duration fishing behaviour in
-                            vessel tracks by feature engineering of training data. ICES Journal of Marine Science.
-                            74(5):1428-36.</p>
-                        <p>O’Farrell S, Perrruso L, Sanchirico JN, Chollett I. In press. Linking real world fisheries
-                            datasets for mapping of revenue from fishing grounds to dependent communities.
-                            Canadian Journal of Fisheries Sciences.</p>
+                                            2021</td>
+                                        <td>0.3207</td>
+                                        <td>0.0062</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
+                        <h6><img src="images/section7_off.png" class="icon" />References</h6>
+                        <figure>
+                            <p>Atkinson S, Judge M, Orhun R. 2021. Coastal Fisheries Logbook Program Metadata.
+                                SEDAR74-DW-3. SEDAR. North Charleston, SC. 17 pp. Available at:
+                                https://sedarweb.org/documents/sedar-74-dw-03-coastal-fisheries-logbook-program-
+                                metadata/</p>
+                            <p>Breiman L. 2001. Random forests. Machine Learning. 45: 5-32.</p>
+                            <p>Carter DW, Liese C. 2017. Summary of economic data collected by the Gulf of Mexico and
+                                South Atlantic Headboat Logbooks: 2015. NOAA Technical Memorandum NMFS-SEFSC-
+                                703. Miami, Florida. 34 pp.</p>
+                            <p>Chollett I, O’Farrell S. 2022. Gulf of Mexico shrimp fishery: linking ELB and dealer data
+                                to
+                                map landings and revenues. Report presented to NOAA SFSC. West of Ireland. 13 pp.</p>
+                            <p>Chollett I, Perruso L, O’Farrell S. 2022. Toward a better use of fisheries data in
+                                spatial
+                                planning. Fish and Fisheries. 23: 1136-1149.</p>
+                            <p>Fitzpatrick EE, Williams EH, Shertzer KW, Siegfried KI, Craig JK, Cheshire RT, Kellison
+                                GT, Fitzpatrick KE, Brennan K. 2017. The NMFS Southeast Region Headboat Survey:
+                                History, methodology, and data integrity. Marine Fisheries Review. 79(1):1-27.</p>
+                            <p>O’Farrell S, Sanchirico JN, Chollett I, Cockrell M, Murawski SA, Watson JT, Haynie A,
+                                Strelcheck A, Perruso L. 2017. Improving detection of short-duration fishing behaviour
+                                in
+                                vessel tracks by feature engineering of training data. ICES Journal of Marine Science.
+                                74(5):1428-36.</p>
+                            <p>O’Farrell S, Perrruso L, Sanchirico JN, Chollett I. In press. Linking real world
+                                fisheries
+                                datasets for mapping of revenue from fishing grounds to dependent communities.
+                                Canadian Journal of Fisheries Sciences.</p>
+                        </figure>
                     </aside>
                 </div>
             </div>
@@ -479,51 +528,36 @@ https://templatemo.com/tm-590-topic-listing
     <script src="js/click-scroll.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        var headers = ["A"];
+        var headers = ["H6"];
 
-        $(".accordion a").click(function (e) {
+        $(".accordion").click(function (e) {
             var target = e.target,
                 name = target.nodeName.toUpperCase();
 
             if ($.inArray(name, headers) > -1) {
-                var subItem = $(target).nextUntil('a');
+                var subItem = $(target).next().children();
 
-                //slideUp all elements (except target) at current depth or greater
-                if (!target.hasAttribute('open')) {
-                    var depth = $(subItem).parents().length;
-                    var allAtDepth = $(".accordion p, .accordion div, .accordion hr, .accordion small, .accordion table").filter(function () {
-                        if ($(this).parents().length >= depth && this !== subItem.get(0)) {
-                            return true;
-                        }
-                    });
-                    var currentSrc = $(this).children().attr("src");
-                    if (currentSrc.includes("_off")) {
-                        $(this).children().attr("src", currentSrc.replace("_off", ""));
-                    }
-                    $(allAtDepth).slideUp("fast");
-
-                    //slideToggle target content and adjust bottom border if necessary
-                    subItem.slideToggle("fast", function () {
-                        $(".accordion :visible:last").css("border-radius", "0 0 10px 10px");
-                    });
-                    $(target).attr({ "open": "opened" });
+                var depth = $(subItem).length;
+                var allAtDepth = $(".accordion p, .accordion div, .accordion hr, .accordion small, .accordion table").filter(function () {
+                });
+                var currentSrc = $(target).children().attr("src");
+                if (currentSrc.includes("_off")) {
+                    $(target).children().attr("src", currentSrc.replace("_off", ""));
                 }
-            }
-        });
-        $(document).ready(function () {
-            // Offset to compensate for the fixed header's height
-            var headerHeight = $('#header').outerHeight();
+                $(allAtDepth).slideUp("slow");
 
-            // Handle anchor link clicks
-            $('a').click(function (e) {
-                e.preventDefault();
-                var target = $($(this).attr('href'));
-                if (target.length) {
+                //slideToggle target content and adjust bottom border if necessary
+                subItem.slideToggle("slow", function () {
+                    $(".accordion :visible:last").css("border-radius", "0 0 10px 10px");
+                });
+                // }
+                setTimeout(function () {
+                    // Scroll to the clicked element
                     $('html, body').animate({
-                        scrollTop: target.offset().top - headerHeight - 25
-                    }, 0);
-                }
-            });
+                        scrollTop: $(target).offset().top - 125
+                    }, 100); // Adjust the duration as needed (e.g., 1000 milliseconds)
+                }, 600);
+            }
         });
     </script>
 </body>

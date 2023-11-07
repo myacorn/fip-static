@@ -763,7 +763,7 @@ strong {
 	color: var(--noaa-dk-blue);
 }
 
-.accordion a {
+.accordion h6 {
 	cursor: pointer;
 	text-transform: uppercase;
 	color: var(--noaa-dk-blue);
@@ -772,7 +772,6 @@ strong {
 	position: relative;
 	z-index: 1;
 	display: block;
-	/* scroll-margin-top: 150px; */
 	font-size: var(--h6-font-size);
 }
 
@@ -788,7 +787,6 @@ strong {
 .accordion p {
 	color: var(--noaa-dk-blue);
 	padding-left: 10px;
-	float: left;
 	padding-right: 10px;
 }
 
@@ -899,6 +897,12 @@ table thead tr, .add-hr {
 	}
 }
 
+@media (min-width: 769px) {
+	.float-left {
+		float: left;
+	}
+}
+
 @media (max-width: 768px) {
 	.accordion .section-img {
 		display: block;
@@ -907,4 +911,5 @@ table thead tr, .add-hr {
 		margin: 0 auto;
 		padding: 10px 0;
 	}
+	
 }
