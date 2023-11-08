@@ -784,10 +784,28 @@ strong {
 	display: none;
 }
 
+.accordion table {
+	margin: 15px 0 40px;
+}
+
+.accordion table th {
+	padding: 0 .5rem;
+}
+
+.accordion table td {
+	position: relative;
+}
+
+.accordion table strong {
+	position: absolute;
+	top: 13px;
+}
+
 .accordion p {
 	color: var(--noaa-dk-blue);
 	padding-left: 10px;
 	padding-right: 10px;
+	margin: 15px 0 0;
 }
 
 .accordion .section-header {
