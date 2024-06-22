@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+    <title>Fisheries Information Platform</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="/css/templatemo-topic-listing.css" rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/fip-logo-blue-bg-landscape.png" style="width: 175px">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll">Tutorial</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#contact">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/map.html">Map</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about-tutorial">
+            <div class="container">
+                <div class="row">
+                    <h6>Tutorial</h6>
+                    <p>
+                        This tutorial was designed to give new users a quick introduction to the Fisheries
+                        Information Platform. The tutorial is arranged into five sections, each tackling
+                        the different components and tools available in the FIP. You can select the section
+                        you want to view although we recommend for you to work on the sections
+                        sequentially. It takes about 15 minutes to go through the entire tutorial.
+                    </p>
+                    <p>
+                        We first discuss briefly the datasets used in the platform. Section 1 of the
+                        tutorial focuses on the general configuration of the FIP, and then we dive
+                        into the details. Section 2 explains the main menu, and concepts such as
+                        adding layers, turning layers on and off and layer ordering. Section 3 explains
+                        how to search along the map. Section 4 discusses how to use the toolbar to print
+                        your map, import layers and perform measurements. Finally, Section 5 dives into
+                        how to use the GIS toolbar. Here you will find novel tools to extract quantitative
+                        information out of the platform.
+                    </p>
+                    <p>
+                        The FIP was developed using MapStore, an open source WebGIS framework developed to
+                        create, manage and share maps. If you are familiar with MapStore, you can surely skip
+                        most of this tutorial, just have a look at Section 5 for information on some special
+                        tools that were created specifically for this project.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="accordion-section">
+            <div class="container">
+                <div class="row">
+                    <aside class="accordion">
+                        <h6><img src="/images/datasets.png" class="icon" />Datasets</h6>
+                        <figure>
+                            <p class="opened-for-codepen">    
+                                The FIP includes fisheries data for the Gulf of Mexico (GoM) Fisheries
+                                Management area, which covers the entire US EEZ from the Atlantic
+                                Mexico border up to the Florida Keys. The Platform contains
+                                non-confidential data of fishing landings and revenues for shrimp,
+                                reef fish, highly migratory species and recreational headboat
+                                fisheries in the GoM. Details of the fisheries datasets can be found
+                                following <b><a href="/methodological-details.html">this link</a></b>.
+
+                                Additional datasets have been included to provide context to the
+                                fisheries data, including marine jurisdictions, oil and gas pipelines
+                                and structures, shipping and navigation routes, areas with spatial
+                                management and sea surface temperature.
+                            </p>
+                        </figure>
+                        <h6><img src="/images/section1_off.png" class="icon" />Section 1. General Configuration</h6>
+                        <figure>
+                            <p class="float-left" id="section1">
+
+                                The default map view displays several basic features. (1) The
+                                <strong>Main menu</strong> is on the left, where an expandable
+                                window has information on the map layers. (2) The 
+                                <strong>Search bar</strong> on the top allows you to search within
+                                the map. (3) On the top right you have a <strong>Toolbar</strong>
+                                with a series ofspecialized tools. (4) On the bottom right you have
+                                a bar with <strong>GIS tools</strong> to navigate the map and
+                                extract information. We will go through these in detail below, but
+                                getting around the FIP is easy: you’ll have pointers letting you
+                                know what each tool does if you hover (move the mouse) over the
+                                relevant icon.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_1_1.png" style="width: 100% !important"/>
+                            </p>
+                        </figure>
+
+                        <h6><img src="/images/section2_off.png" class="icon" />Section 2. Main Menu</h6>
+                        <figure>
+                            <p>
+                                Click on the <strong>Layers icon</strong> to expand the window and access the main menu.
+                                The default layers will be visible.
+                            </p>
+
+                            <p class="float-left" style="padding-bottom: 15px">
+                                <strong class="section-header">2.1. Changing visible layers</strong>
+                                <br>
+                                You can <strong>Toggle the visibility of the group</strong>
+                                of layers or <strong>Toggle the visibility of individual layers</strong>
+                                by clicking on the eye icon. If you would rather change the order of the
+                                layers to make the layer(s) of interest more prominent you can
+                                <strong>Grab and sort the layer or the group:</strong> just click on
+                                the three lines and drag the item up or down the list to its desired
+                                position. For each layer, you can Adjust the transparency by sliding
+                                the bar left or right so multiple layers will be visible on top of each
+                                other. Finally, if you click on the chevron, you’ll be able to
+                                <strong>Display the legend</strong> for that layer.
+                            </p>
+
+                            <p class="float-left">
+                                <strong class="section-header">2.2. Exploring layers</strong>
+                                <br>
+                                You can explore all layers contained in the FIP by scrolling through
+                                the window. Currently (as June 2024) the platform’s data main
+                                categories are: Reef fish fisheries, Shrimp fisheries, Pelagic
+                                fisheries, Other fisheries, and Other data. Each category comes with
+                                an associated group of layers. You can <strong>Open a group</strong>
+                                of layers to see their content by clicking on the folder icon.
+                                Alternatively, you can <strong>Close a group</strong> by clicking on
+                                the open folder icon. Finally, you can search all the layers by using
+                                the <strong>Filter layers</strong> box. For example, searching by
+                                “Florida” will list all layers depicting data for Florida for the
+                                entire dataset.
+                            </p>
+
+                            <p><img class="section-img first-image" src="/images/FIP_capture_2_1.png" style="width: 100% !important"/></p>
+
+                        </figure>
+
+
+                        <h6><img src="/images/section3_off.png" class="icon" />Section 3. Search bar</h6>
+                        <figure>
+                            <p>
+                                The search bar allows you to find a site of interest in the map, either by specifying an address
+                                (towns, streets, or post codes) or coordinates in decimal degrees. The default is to query by
+                                address. The FIP will autocomplete your text if you’re typing a street address and then zoom into
+                                that location. If you want to search by coordinate instead, click on
+                                <strong>Change the search tool</strong> and you’ll be able to search by coordinates instead using
+                                decimal degrees. Remember you can always go back to a larger extent by using the
+                                <strong>GIS toolbar</strong>.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_3_1.png" style="width: 100% !important"/>
+                            </p>
+                        </figure>
+
+                        <h6><img src="/images/section4_off.png" class="icon" />Section 4. Toolbar</h6>
+                        <figure>
+                            <p>
+                                The toolbar contains some basic tools, such as the ability to <strong>Print</strong>
+                                the current map, <strong>Import a map file</strong> or vector data to add to your map and
+                                <strong>Measure</strong> features in the map.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_4_1.png" style="width: 100% !important"/>
+                            </p>
+
+                            <p><strong class="section-header" style="padding-bottom: 15px">4.1. Printing your map</strong>
+                                <br>
+                                You can print the current view for later use. Simply enter a
+                                <strong>Title</strong> and a <strong>Description</strong> of your map
+                                and indicate what file <strong>Format</strong> you need. You can choose
+                                between PDF, PNG or JPEG. <strong>Rotate</strong> the map if it makes
+                                more sense to have it at an angle for interpretation. You can also
+                                decide on the <strong>Layout</strong> of the map: what
+                                <strong>Size of Sheet</strong> you’re printing off, if you want to
+                                include the <strong>Legend</strong>, and if you would like the sheet
+                                to be printed on <strong>Landscape</strong> (horizontal) or
+                                <strong>Portrait</strong> (vertical) format. For maps encompassing the
+                                entire Gulf of Mexico, landscape is better. You can also decide on the
+                                output <strong>Resolution</strong> of the map (the larger the value the
+                                more detail but also the larger the output file). Click
+                                <strong>Print</strong>. You can zoom in and out of the final map to see
+                                the details. If you would like some changes, go back. If you are happy
+                                with how it looks, click the download button, the one with the down
+                                arrow.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_4_2.png" style="width: 100% !important"/>
+                            </p>
+
+                            <p><strong class="section-header" style="padding-bottom: 15px">4.2. Import vector data</strong>
+                                <br>
+                                You can import your own vector data into the map for visualization and
+                                analysis. This tool supports the vector formats Shapefiles, KML, KMZ
+                                or GeoJSON. If you have a Shapefile you need to first compress all
+                                files within a zip folder. Simply select the file you want to upload
+                                or drop it into the window. The new data will appear on the main menu,
+                                under the group “Default” at the very top.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_4_3.png" style="width: 100% !important"/>
+
+                                You can customize the new feature by selecting the color of the stroke
+                                and its width, as well as the color of the fill. If you click
+                                <strong>Finish</strong>, then your feature will appear, and the view
+                                will automatically zoom into that feature in the map unless you
+                                unclick <strong>Zoom on the vector files</strong>. The new feature
+                                will appear at the top of the Main menu inside the group “Default”.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_4_4.png" style="width: 100% !important"/>
+
+                            </p>
+
+                            <p><strong class="section-header">4.3. Performing measurements</strong>
+                                <br>
+                                You can measure <strong>distance</strong>, <strong>area</strong> and
+                                <strong>bearing</strong> on the map using different
+                                </strong>measurement units</strong>. To measure a distance, click on
+                                the <strong>distance</strong> icon and then click on the map to draw
+                                the beginning of your line and the nodes between sequential lines.
+                                If you double click you’ll finish your line drawing. You’ll be able to
+                                see both the measurements of each segment and the total length of your
+                                line in the selected <strong>units</strong>. To measure an
+                                <strong>area</strong> the procedure is similar: click on the map to
+                                draw the vertices of your polygon, and double click to end your
+                                drawing. <strong>Bearing</strong> measurements are more unusual, they
+                                allow you to measure angles in degrees. To calculate a bearing, first
+                                click on the map to define a starting point and then click again to
+                                draw the end point. Bearings are written as a meridian, an angle and a
+                                direction. For example, a bearing of S 60 W defines an angle of 60
+                                degrees West measured from South.
+                            </p>
+
+                            <p>
+                                After you are done you can <strong>clear all your measurements</strong>
+                                from the map or </strong>export them in GeoJSON format</strong> to add
+                                them to the FIP later or used them in another application.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_4_5.png" style="width: 100% !important"/>
+                            </p>
+
+                        </figure>
+                        <h6><img src="/images/section5_off.png" class="icon" />Section 5. GIS toolbar</h6>
+                        <figure>
+                            <p>
+                                The GIS toolbar contains several tools to allow you to interact with
+                                the map. You can <strong>Zoom in</strong> and <strong>Zoom out</strong>
+                                of the map. If you’re not happy with the new extent, you can
+                                <strong>Zoom to the map extent</strong> to go back to the initial view.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_5_1.png" style="width: 100% !important"/>
+                            </p>
+                            <p>
+                                This toolbar also offers the most exciting capabilities of the FIP,
+                                such as the ability to produce queries and quantitative reports.
+                            </p>
+
+                            <p class="float-left" style="padding-bottom: 15px">
+                                <strong class="section-header">5.1. Querying objects in the map: Fisheries data on land</strong>
+                                <br>
+                                You can also click over any GoM county with associated fisheries data
+                                (outlined in blue). The fishing territory for the reef fishery will
+                                appear in blue, and for the shrimp fishery in red. These layers may
+                                be better viewed with no layers on the background. If you click on the
+                                county again the territories will disappear from the map.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_5_2.png" style="width: 100% !important"/>
+                            </p>
+
+                            <p class="float-left" style="padding-bottom: 15px">
+                                <strong class="section-header">5.2. Querying objects in the map: Fisheries data at sea</strong>
+                                <br>
+                                This tool allows you to extract quantitative information from the FIP
+                                by clicking on sea and getting information on fisheries landings and
+                                revenues accrued in that cell. After clicking in your area of interest,
+                                a box will open showing the associated information for all fisheries.
+                                You can download the information as a csv file if you would want to keep
+                                it.
+
+                                <img class="section-img first-image" src="/images/FIP_capture_5_3.png" style="width: 100% !important"/>
+                            </p>
+
+                            <p class="float-left" style="padding-bottom: 15px">
+                                <strong class="section-header">5.3 Generating reports for an area</strong>
+                                <br>
+                                As you did before when measuring areas (section 4.3), you can create an area of interest by
+                                clicking on the map and closing the polygon with a double click. This will generate a report with
+                                all the landings and revenues accrued by that region.  You can download the information as a csv
+                                file if you would want to keep it.
+                            </p>
+
+                        </figure>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <section class="hero-section tutorial-footer-hero-section justify-content-center align-items-center">
+        </section>
+    </main>
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-12 mb-4 pb-2">
+                    <img src="/images/NOAA_FISHERIES_logoH.png" style="width: 150px">
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</a>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item mb-2">
+                                <a href="/home" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item mb-2">
+                                <a href="/tutorial" class="site-footer-link">Tutorial</a>
+                            </li>
+
+                            <li class="site-footer-link-item mb-2">
+                                <a href="/contact" class="site-footer-link">Contact</a>
+                            </li>
+
+                            <li class="site-footer-link-item mb-2">
+                                <a href="/map" class="site-footer-link">Map</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Follow us</a>
+
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="https://twitter.com/NOAAFisheriesSE" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.facebook.com/NOAAFisheries"
+                                    class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/noaafisheries"
+                                    class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.youtube.com/user/usnoaafisheriesgov"
+                                    class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-12 mt-4 mt-lg-0 ms-auto">
+
+                    <p class="copyright-text mt-lg-5 mt-4">Copyright © 2023 <a
+                            href="https://www.fisheries.noaa.gov/about/southeast-fisheries-science-center"
+                            target="_blank">Southeast Fisheries Science Center (SFSC)</a>.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.sticky.js"></script>
+    <script src="/js/click-scroll.js"></script>
+    <script src="/js/custom.js"></script>
+    <script>
+        var headers = ["H6"];
+
+        $(".accordion").click(function (e) {
+            var target = e.target,
+                name = target.nodeName.toUpperCase();
+
+            if ($.inArray(name, headers) > -1) {
+                var subItem = $(target).next().children();
+                var currentSrc = $(target).children().attr("src");
+                var depth = $(subItem).length;
+                subItem.addClass('open');
+                var allAtDepth = $(".accordion p, .accordion div, .accordion hr, .accordion small, .accordion table").filter(function () {
+                    if (subItem.hasClass("open")) {
+                        return true;
+                    }
+                });
+
+                $("h6:has([src])").each(function () {
+                var h6Element = $(this);
+                var srcAttribute = h6Element.find("[src]").attr("src");
+
+                if (srcAttribute && !srcAttribute.includes("_off")) {
+                    h6Element.children().attr("src", srcAttribute.replace(".png", "_off.png"));
+                }
+
+                if (currentSrc.includes("_off")) {
+                    $(target).children().attr("src", currentSrc.replace("_off", ""));
+                }
+            });
+
+                $(allAtDepth).slideUp("slow");
+
+                //slideToggle target content and adjust bottom border if necessary
+                subItem.slideToggle("slow", function () {
+                    $(".accordion :visible:last").css("border-radius", "0 0 10px 10px");
+                });
+                setTimeout(function () {
+                    // Scroll to the clicked element
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top - 125
+                    }, 100); // Adjust the duration as needed (e.g., 1000 milliseconds)
+                }, 600);
+            }
+        });
+    </script>
+</body>
+
+</html>
