@@ -1206,6 +1206,19 @@ https://templatemo.com/tm-590-topic-listing
                             </table>
 
                         </figure>
+
+
+                        <h6><img src="images/section5_off.png" class="icon" />Fishing territories</h6>
+                        <figure>
+                            <p>Although the sea can look like an open landscape without boundaries, fishers' extraction of its resources is highly clustered in space, and different fishing communities have well defined fishing territories they target. Knowledge of fishing territories can be used to identify where fishing occurs, to quantify site fidelity, competition, temporal shifts in use, to assess the effects of management measures, and to allow rapid-response assessments of vulnerability of fishing-dependent communities to environmental shocks.</p>
+                            <p>Fishing territories were estimated from detailed Vessel Monitoring System data that provides the position of each vessel at intervals of about 1 hour, which has been linked to logbook records recording associated counties of landing. Here, territories are identified at the spatial resolution of Counties.</p>
+                            <p>Fishing territories were delineated using polygons that outline the areas where 95% of that community’s vessel activity occur in their entire fishing history.</p>
+                            <p>For reef fishing (longline, handline and bandit reel), territories span the period 2007-2021. The maps were created using a Local Convex Hull method that constructs small minimum convex polygons (hulls) for each fishing position and its neighbors, and then merging the hulls together, therefore taking spatial autocorrelation into account (Getz et al. 2007). Here, we set the parameter k (the number of neighbors) to the square root of the number of observations, which is commonly advised (Signer et al. 2015, Noonan et al. 2019). This method has shown to be the most appropriate to estimate fishing territories in fishing data (Chollett et al, in review).</p>
+                            <p>For shrimp, territories describe the fishery for the period 2014-2021. The maps were created using a Kernel Density Estimation method that aggregates all fishing effort into grids, and then generates a surface using a non-parametric method based on a smoothing parameter h. Kernel results are extremely sensitive to the choice of the smoothing parameter.  Here, we used the automatic method smoothed cross validation (Duong 2022) to calculate a bivariate h. This method has shown to be appropriate to estimate communities-at-sea in fishing data when datasets are large (Chollett et al, in review).</p>
+                            <p>All maps were aggregated at the “community” level, and represent the collective grounds of all fishers for that County. To protect data confidentiality, only communities consisting of more than three vessels were mapped.</p>        
+                        </figure>
+
+
                         <h6><img src="images/section7_off.png" class="icon" />References</h6>
                         <figure>
                             <p>Atkinson S, Judge M, Orhun R. 2021. Coastal Fisheries Logbook Program Metadata.
@@ -1216,53 +1229,32 @@ https://templatemo.com/tm-590-topic-listing
                             <p>Carter DW, Liese C. 2017. Summary of economic data collected by the Gulf of Mexico and
                                 South Atlantic Headboat Logbooks: 2015. NOAA Technical Memorandum NMFS-SEFSC-
                                 703. Miami, Florida. 34 pp.</p>
+                            <p>Chollett I, O’Farrell S., Perruso L., McPherson M., Matitski A. In review. Delineating
+                                fishing territories for marine resource management.</p>
                             <p>Chollett I, O’Farrell S. 2022. Gulf of Mexico shrimp fishery: linking ELB and dealer data
-                                to
-                                map landings and revenues. Report presented to NOAA SFSC. West of Ireland. 13 pp.</p>
+                                to map landings and revenues. Report presented to NOAA SFSC. West of Ireland. 13 pp.</p>
                             <p>Chollett I, Perruso L, O’Farrell S. 2022. Toward a better use of fisheries data in
-                                spatial
-                                planning. Fish and Fisheries. 23: 1136-1149.</p>
+                                spatial planning. Fish and Fisheries. 23: 1136-1149.</p>
+                            <p>Duong T. 2022. ks: Kernel Smoothing. R package version 1.14.0. https://CRAN.R-project.org/package=ks</p>
                             <p>Fitzpatrick EE, Williams EH, Shertzer KW, Siegfried KI, Craig JK, Cheshire RT, Kellison
                                 GT, Fitzpatrick KE, Brennan K. 2017. The NMFS Southeast Region Headboat Survey:
                                 History, methodology, and data integrity. Marine Fisheries Review. 79(1):1-27.</p>
+                            <p>Getz WM, Fortmann-Roe S, Cross PC, Lyons AJ, Ryan SJ, Wilmers CC. 2007.
+                                LoCoH: Nonparameteric Kernel methods for constructing home ranges and utilization distributions.
+                                PLoS One.  2(2): e207.</p>
+                            <p>Noonan MJ, Tucker MA, Fleming CH, Akre TS, Alberts SC, Ali AH, Altmann J, Antunes PC, Belant JL, Beyer D, Blaum N. 2019. A comprehensive analysis of autocorrelation and bias in home range estimation. Ecological Monographs. 89(2):e01344.</p>
                             <p>O’Farrell S, Sanchirico JN, Chollett I, Cockrell M, Murawski SA, Watson JT, Haynie A,
                                 Strelcheck A, Perruso L. 2017. Improving detection of short-duration fishing behaviour
-                                in
-                                vessel tracks by feature engineering of training data. ICES Journal of Marine Science.
+                                in vessel tracks by feature engineering of training data. ICES Journal of Marine Science.
                                 74(5):1428-36.</p>
                             <p>O’Farrell S, Perrruso L, Sanchirico JN, Chollett I. In press. Linking real world
-                                fisheries
-                                datasets for mapping of revenue from fishing grounds to dependent communities.
+                                fisheries datasets for mapping of revenue from fishing grounds to dependent communities.
                                 Canadian Journal of Fisheries Sciences.</p>
+                            <p>Signer J, Balkenhol N, Ditmer M, Fieberg J. 2015.
+                                Does estimator choice influence our ability to detect changes in home-range size?.
+                                Animal Biotelemetry. 3:1-9.</p>
                         </figure>
                     </aside>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-tutorial">
-            <div class="container">
-                <div class="row">
-                    <h6>Fishing territories</h6>
-                    <p>Although the sea can look like an open landscape without boundaries, fishers' extraction of its resources is highly clustered in space, and different fishing communities have well defined fishing territories they target. Knowledge of fishing territories can be used to identify where fishing occurs, to quantify site fidelity, competition, temporal shifts in use, to assess the effects of management measures, and to allow rapid-response assessments of vulnerability of fishing-dependent communities to environmental shocks.</p>
-                    <p>Fishing territories were estimated from detailed Vessel Monitoring System data that provides the position of each vessel at intervals of about 1 hour, which has been linked to logbook records recording associated counties of landing. Here, territories are identified at the spatial resolution of Counties.</p>
-                    <p>Fishing territories were delineated using polygons that outline the areas where 95% of that community’s vessel activity occur in their entire fishing history.</p>
-                    <p>For reef fishing (longline, handline and bandit reel), territories span the period 2007-2021. The maps were created using a Local Convex Hull method that constructs small minimum convex polygons (hulls) for each fishing position and its neighbors, and then merging the hulls together, therefore taking spatial autocorrelation into account (Getz et al. 2007). Here, we set the parameter k (the number of neighbors) to the square root of the number of observations, which is commonly advised (Signer et al. 2015, Noonan et al. 2019). This method has shown to be the most appropriate to estimate fishing territories in fishing data (Chollett et al, in review).</p>
-                    <p>For shrimp, territories describe the fishery for the period 2014-2021. The maps were created using a Kernel Density Estimation method that aggregates all fishing effort into grids, and then generates a surface using a non-parametric method based on a smoothing parameter h. Kernel results are extremely sensitive to the choice of the smoothing parameter.  Here, we used the automatic method smoothed cross validation (Duong 2022) to calculate a bivariate h. This method has shown to be appropriate to estimate communities-at-sea in fishing data when datasets are large (Chollett et al, in review).</p>
-                    <p>All maps were aggregated at the “community” level, and represent the collective grounds of all fishers for that County. To protect data confidentiality, only communities consisting of more than three vessels were mapped.</p>
-                    <p></p>
-                    <p><strong>References:</strong>
-                        <br>
-                        Chollett I, S O’Farrell, L Perruso, M McPherson, A Matitski. In review. Delineating fishing territories for marine resource management.
-                        <br>
-                        Duong T. 2022. ks: Kernel Smoothing. R package version 1.14.0. https://CRAN.R-project.org/package=ks
-                        <br>
-                        Getz WM, Fortmann-Roe S, Cross PC, Lyons AJ, Ryan SJ, Wilmers CC. 2007. LoCoH: Nonparameteric Kernel methods for constructing home ranges and utilization distributions. PLoS One.  2(2): e207.
-                        <br>
-                        Noonan MJ, Tucker MA, Fleming CH, Akre TS, Alberts SC, Ali AH, Altmann J, Antunes PC, Belant JL, Beyer D, Blaum N. 2019. A comprehensive analysis of autocorrelation and bias in home range estimation. Ecological Monographs. 89(2):e01344.
-                        <br>
-                        Signer J, Balkenhol N, Ditmer M, Fieberg J. 2015. Does estimator choice influence our ability to detect changes in home-range size?. Animal Biotelemetry. 3:1-9.
-                        </p>
                 </div>
             </div>
         </section>
